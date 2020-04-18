@@ -179,7 +179,7 @@ border-radius: 50%;
 }
 /* --------stat -------*/
 .stat{
-  height: 100vh;
+  height: auto;
    max-width: 1230px;
    margin: 0 auto;
    padding:131px 15px 0;
@@ -413,7 +413,6 @@ width: 730px;
     padding-top: 20px;
   }
   .description {
-    padding-top: 450px;
   }
   .copyright {
     font-size: 10px;
@@ -517,4 +516,25 @@ width: 730px;
     font-size:16px;
     line-height: 22px;
   }
+}
+@media (max-height:450px) {
+  .slick-dots{
+    position: absolute;
+    right: 0;
+    bottom: 60px;
+  }
+  .header-content-btn{
+    padding: 15px 15px;
+    width: 200px;
+  }
+  .header-top{
+    margin-bottom: 20px;
+  }
+  .header-content-text {
+    font-size: 13px;
+    line-height: 19px;
+}
+.header-content-btn{
+  margin-top: 20px;
+}
 }
