@@ -13,8 +13,8 @@ $('.statistic__slider').slick({
   slidesToShow: 2,
   centerMode: true,
   slidesToScroll: 1,
-  // autoplay: true,
-  autoplaySpeed: 5000,
+   autoplay: true,
+  autoplaySpeed: 3000,
   arrows: false,
   responsive: [
    {
@@ -40,12 +40,15 @@ $('.statistic__slider').slick({
    },
  ]
 });
-
+ new WOW().init();
 
 const factorItem = document.querySelectorAll('.factors__item'),
       mask = document.querySelectorAll('.mask'),
       factorsItemTitle = document.querySelectorAll('.factors__item-title'),
-      factorsItemText = document.querySelectorAll('.factors__item-text');
+      factorsItemText = document.querySelectorAll('.factors__item-text'),
+      menuBtn = document.querySelector('.menu'),
+      closeBtn = document.querySelector('.closeBtn'),
+      nav = document.querySelector('.nav');
 
 
 const toggleClass = (i) => {
@@ -59,8 +62,16 @@ const toggleClass = (i) => {
 }
 
 
+const toggleMenu = () => {
+  nav.classList.toggle('nav-active')
+}
+
+// ----events--------------------------------------
 factorItem.forEach((item,i) => {
   item.addEventListener('click', () => {
      toggleClass(i);
   });
 });
+
+menuBtn.addEventListener('click',toggleMenu);
+closeBtn.addEventListener('click',toggleMenu);

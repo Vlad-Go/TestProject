@@ -6,85 +6,94 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <!-- <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+/> -->
 </head>
 <body>
 
    <header class="header">
-        <div class="header__bg-decoration"></div>
+        <div class="header__bg-decoration animated fadeInLeft"></div>
         <div class="container  header__container">
             <div class="header__header">
               <div class="menu"></div>
             </div>
             <div class="header__content">
-              <h1 class="header__title">
+              <h1 class="header__title  animated fadeInLeft">
                 Екологiчнi проблеми <span>людства</span>
               </h1>
             </div>
-            <div class="btn-down"></div>
+            <div class="btn-down animated slow infinite bounce "></div>
         </div>
 
    </header>
+
    <div class="header__slider">
      <div class="header__slider-item"  style='background-image:url(img/forest.jpg)'></div>
      <div class="header__slider-item"  style='background-image:url(img/gasPollution.jpg)'></div>
      <div class="header__slider-item"  style='background-image:url(img/soil.jpg)'></div>
      <div class="header__slider-item"  style='background-image:url(img/pollution.jpg)'></div>
    </div>
+
    <section class="goal">
       <div class="container goal__container">
-        <h3 class="title goal__title">Мета</h3>
-        <img class="goal__img" src="img/Goal-img.svg" alt="img">
+        <h3 class="title goal__title animated  bounceInUp wow " data-wow-offset="50">Мета</h3>
+        <img class="goal__img animated  rubberBand wow " data-wow-offset="50" src="img/Goal-img.svg" alt="img">
         <p class="goal__text">дослідити, які існують глобальні екологічні проблеми нашої планети та способи
           їх подолання
         </p>
       </div>
    </section>
+
    <section class="ecology">
        <div class="container ecology__container">
-          <div class="ecology__img"></div>
+          <div class="ecology__img animated  bounceInLeft wow " data-wow-offset="150"></div>
           <div class="ecology__content">
-              <h3 class="title ecology__title">Еколочгіні <span>проблeми</span></h3>
-              <p class="text ecology__text">Екологі́чна пробле́ма — це зміна природного середовища в результаті антропогенних дій, що веде до порушення структури і функціонування природних систем (ландшафтів) і призводить до негативних соціальних, економічних та інших наслідків.
-                Відомо, на живі організми впливають фактори зовнішнього середовища, або екологічні, які мають різну природу і специфічні за дією.
+              <h3 class="title ecology__title">Екологічні <span>проблeми</span></h3>
+              <p class="text ecology__text">Екологічна проблема — це зміна природного середовища в результаті антропогенних дій, що веде до порушення структури і функціонування природних систем (ландшафтів) і призводить до негативних соціальних, економічних та інших наслідків.
+                Відомо,що на живі організми впливають фактори зовнішнього середовища, або екологічні, які мають різну природу і специфічні за дією
               </p>
           </div>
        </div>
    </section>
+
    <section class="factors">
      <div class="container factors__container">
-       <div class="factors__item" style='background-image:url(img/AbioticFactors.jpg)'>
+       <div class="factors__item animated  bounceInLeft wow " data-wow-offset="90" style='background-image:url(img/AbioticFactors.jpg)'>
               <div class="mask"></div>
              <div class="factors__item-title">Абіотичні фактори</div>
              <div class="factors__item-text">
-                або фактори неживої природи, - це
+                або фактори неживої природи - це
                 температура, світло, вологість, тиск, радіоактивне випромінювання,
                 вітер, сольовий склад води, рельєф місцевості тощо. Вони можуть
                 впливати на живі організми прямо чи опосередковано
               </div>
        </div>
-       <div class="factors__item " style='background-image:url(img/AnthropicFactors.jpg)'>
+       <div class="factors__item animated  bounceInUp wow " data-wow-offset="90" style='background-image:url(img/AnthropicFactors.jpg)'>
              <div class="mask"></div>
              <div class="factors__item-title">Антропічні фактори</div>
              <div class="factors__item-text">
-                або фактори живої природи, - це форми впливу живих організмів один на
+                або фактори живої природи - це форми впливу живих організмів один на
                 одного (мікроорганізмів і грибів, рослин і тварин). Безпосереднє живе
                 оточення організму складає його біотичне середовище
               </div>
        </div>
        <div class="line-break"></div>
-       <div class="factors__item factors__item-last" style='background-image:url(img/BioticFactors].jpg);'>
+       <div class="factors__item factors__item-last animated  bounceInRight wow " data-wow-offset="90" style='background-image:url(img/BioticFactors].jpg);'>
            <div class="mask"></div>
            <div class="factors__item-title factors__item_margBott">Біотичні фактори</div>
            <div class="factors__item-text">
               це внесені у природу людською діяльністю зміни, що впливають на
-              органічний світ.
+              органічний світ
            </div>
        </div>
      </div>
    </section>
+
    <section class="pollution-a">
       <div class="container pollution-a__container">
-        <h3 class="title pollution-a__title">Забруднення <span>атмосфери</span> </h3>
+        <h3 class="title pollution-a__title animated  rubberBand wow " data-wow-offset="50">Забруднення <span>атмосфери</span> </h3>
         <p class=" text pollution-a__text">Із екологічних проблем найгострішою проблемою
            є забруднення атмосферного повітря.Вона включає ряд аспектів:
         </p>
@@ -116,6 +125,7 @@
         </div>
       </div>
    </section>
+
    <section class="pollution-w">
       <div class="container pollution-w__container">
             <h3 class="title pollution-w__title">Забруднення і виснаження <span>водних ресурсів</span></h3>
@@ -130,32 +140,33 @@
                 т хлорорганічних пестицидів, 5-11 млн. т. нафти, 6,4 млн. т. пластмас, солей
                 важких металів, твердих відходів та твердого сміття.
                 У Північній Атлантиці нафтова плівка займає 2-3% площі.  Найбільш забруднені нафтою
-                Карибське море, Перська Затока та ін. де нафта перевозиться танкерним флотом.
+                Карибське море, Перська Затока та ін. де нафта перевозиться танкерним флотом
                </p>
-               <img class="pollution-w__img" src="img/pollution-w.svg" alt="img">
+               <img class="pollution-w__img animated  bounceInRight wow " data-wow-offset="150" src="img/pollution-w.svg" alt="img">
             </div>
       </div>
     </section>
 
 
+
     <section class="soil">
         <div class="container soil__container">
-           <div class="soil__img"></div>
+           <div class="soil__img animated  bounceInUp wow " data-wow-offset="80" ></div>
            <div class="soil__content">
                <h3 class="title soil__title">Деградація <span>грунтів</span></h3>
                <p class="text soil__text"> Внаслідок прискореної ерозії людство
                  втратило майже 2 млрд га продуктивних земель. До утворення пустель
                  схильна площа до 4,5 млрд га земель, на якій проживає близько
                  850 млн людей. Швидкість зникнення лісів становить 6-20 млн га
-                 на рік.
+                 на рік
                </p>
            </div>
         </div>
-    </section>
+  </section>
 
     <section class="redBook">
         <div class="container redBook__container">
-           <h3 class="title redBook__title">Світове біорізноманіття  <span>швидко зникає</span></h3>
+           <h3 class="title redBook__title   animated  fadeInUpBig wow " data-wow-offset="90">Світове біорізноманіття  <span>швидко зникає</span></h3>
            <div class="redBook__content">
                <p class="text redBook__text"> Так звана Червона книга Міжнародного
                  союзу охорони природи (МСОП) - перелік видів, які перебувають під
@@ -194,10 +205,10 @@
                        Антарктики пришвидшили танення. Рівень Світового океану
                        при цьому підніметься на півтора метра. А далі за
                        сценарієм найстрашнішого апокаліпсису: шторми, урагани,
-                       посухи, повені тощо.
+                       посухи, повені тощо
                      </p>
                </div>
-               <img class="greenhouseEf__img" src="img/Earth.svg"/>
+               <img class="greenhouseEf__img  animated  heartBeat wow " data-wow-offset="110" data-wow-delay="1s" src="img/Earth.svg"/>
            </div>
 
         </div>
@@ -209,54 +220,136 @@
           <p class="text statistic__suptitle">Щогодини на нашій планеті:</p>
            <div class="statistic__slider">
 
-              <div class="statistic__slider-item">
-                <div class="statistic__slider-item-wrapper">
-                    <img  class="statistic__slider-item-img" src="img/desert.svg" alt="">
-                    <p class="statistic__slider-item-text">1700 акрів продуктивної землі перетворюються
-                       на пустелю
-                    </p>
-                </div>
-              </div>
-              <div class="statistic__slider-item">
-                <div class="statistic__slider-item-wrapper">
-                    <img  class="statistic__slider-item-img" src="img/plants.svg" alt="">
-                    <p class="statistic__slider-item-text"> п’ять – шість видів тваринного чи рослинного світу зникають
-                    </p>
-                </div>
-              </div>
-              <div class="statistic__slider-item">
-                <div class="statistic__slider-item-wrapper">
-                    <img  class="statistic__slider-item-img" src="img/toxic.svg" alt="">
-                    <p class="statistic__slider-item-text"> 2000 тон кислотних дощів випадають у Північній півкулі
-                    </p>
-                </div>
-              </div>
-              <div class="statistic__slider-item">
-                <div class="statistic__slider-item-wrapper">
-                    <img  class="statistic__slider-item-img" src="img/water.svg" alt="">
-                    <p class="statistic__slider-item-text">1000 чоловік умирає від отруєння водою
-                    </p>
-                </div>
-              </div>
-              <div class="statistic__slider-item">
-                <div class="statistic__slider-item-wrapper">
-                    <img  class="statistic__slider-item-img" src="img/hung.svg" alt="">
-                    <p class="statistic__slider-item-text"> близько 2000 дітей помирають від голоду
-                    </p>
-                </div>
-              </div>
-              <div class="statistic__slider-item">
-                <div class="statistic__slider-item-wrapper">
-                    <img  class="statistic__slider-item-img" src="img/pest.svg" alt="">
-                    <p class="statistic__slider-item-text"> 55 чоловік отруюються й гинуть від пестицидів та інших хімічних речовин
-                    </p>
-                </div>
-              </div>
+                  <div class="statistic__slider-item">
+                    <div class="statistic__slider-item-wrapper">
+                        <img  class="statistic__slider-item-img" src="img/desert.svg" alt="">
+                        <p class="statistic__slider-item-text">1700 акрів продуктивної землі перетворюються
+                           на пустелю
+                        </p>
+                    </div>
+                  </div>
+                  <div class="statistic__slider-item">
+                    <div class="statistic__slider-item-wrapper">
+                        <img  class="statistic__slider-item-img" src="img/plants.svg" alt="">
+                        <p class="statistic__slider-item-text"> п’ять – шість видів тваринного чи рослинного світу зникають
+                        </p>
+                    </div>
+                  </div>
+                  <div class="statistic__slider-item">
+                    <div class="statistic__slider-item-wrapper">
+                        <img  class="statistic__slider-item-img" src="img/toxic.svg" alt="">
+                        <p class="statistic__slider-item-text"> 2000 тон кислотних дощів випадають у Північній півкулі
+                        </p>
+                    </div>
+                  </div>
+                  <div class="statistic__slider-item">
+                    <div class="statistic__slider-item-wrapper">
+                        <img  class="statistic__slider-item-img" src="img/water.svg" alt="">
+                        <p class="statistic__slider-item-text">1000 чоловік умирає від отруєння водою
+                        </p>
+                    </div>
+                  </div>
+                  <div class="statistic__slider-item">
+                    <div class="statistic__slider-item-wrapper">
+                        <img  class="statistic__slider-item-img" src="img/hung.svg" alt="">
+                        <p class="statistic__slider-item-text"> близько 2000 дітей помирають від голоду
+                        </p>
+                    </div>
+                  </div>
+                  <div class="statistic__slider-item">
+                    <div class="statistic__slider-item-wrapper">
+                        <img  class="statistic__slider-item-img" src="img/pest.svg" alt="">
+                        <p class="statistic__slider-item-text"> 55 чоловік отруюються й гинуть від пестицидів та інших хімічних речовин
+                        </p>
+                    </div>
+                  </div>
 
            </div>
+           <p class="text statistic__suptitle">Щохвилини на нашій планеті:</p>
+           <div class="statistic__content">
+                 <div class="statistic__content-item">
+                     <img  class="statistic__content-item-img" src="img/C02prod.svg" alt="">
+                     <p class="statistic__content-item-text"> в атмосферу виділяється понад 12000 тонн вуглекислого газу
+                     </p>
+                 </div>
+                 <div class="statistic__content-item">
+                     <img  class="statistic__content-item-img" src="img/grunt.svg" alt="">
+                     <p class="statistic__content-item-text">зміщується 50 тонн родючого ґрунту через неправильне його використання
+                 </div>
+
+
+                 <div class="statistic__content-item">
+                     <img  class="statistic__content-item-img" src="img/oil.svg" alt="">
+                     <p class="statistic__content-item-text"> використовується близько 35000 барелів нафти
+                 </div>
+
+           </div>
+
+
         </div>
     </section>
 
+    <section class="desision">
+       <div class="container desision__container">
+         <h3 class="title desision__title">Висновок</h3>
+         <img class="desision__img  animated  jello wow " data-wow-offset="110" src="img/Des-img.svg" alt="img">
+         <p class="desision__text">Глобальна проблема екологічного забруднення буде існувати
+          до тих пір, поки все людство не об`єднається для її вирішення, тому що від
+          цього належить майбутнє наступних поколінь. Як говорить древня індійська
+          сентенція: "Природа - це не те, що ми отримали у спадщину від пращурів, а те
+          що ми взяли у позику від нащадків"
+         </p>
+       </div>
+    </section>
+
+    <footer class="footer">
+      <div class="copyright">Проект виконував Голобин Владислав</div>
+    </footer>
+
+    <nav class="nav">
+      <div class="container nav__container">
+        <div class="nav__header">
+          <div class="closeBtn"></div>
+        </div>
+        <div class="nav__content">
+              <div class="nav_block block-1">
+                <div class="block-text">Екологiчнi <span>проблeми</span></div>
+              </div>
+
+              <div class="nav_block block-2">
+                <div class="block-text">Свiтове <span>бiорiзноманiття</span> <span>швидко</span><span>зникає</span> </div>
+              </div>
+
+              <div class="nav_block block-3">
+                <div class="block-text">Мета</div>
+              </div>
+
+              <div class="nav_block block-4">
+                <div class="block-text">Статистика</div>
+              </div>
+
+              <div class="nav_block block-5">
+                <div class="block-text">Деградація <span>грунтів</span></div>
+              </div>
+
+              <div class="nav_block block-6">
+                <div class="block-text"></div>
+              </div>
+
+              <div class="nav_block block-7">
+                <div class="block-text"></div>
+              </div>
+
+              <div class="nav_block block-8">
+                <div class="block-text"></div>
+              </div>
+
+              <div class="nav_block block-9">
+                <div class="block-text"></div>
+              </div>
+        </div>
+      </div>
+    </nav>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/libs.min.js" charset="utf-8"></script>
   <script src="js/script.js" charset="utf-8"></script>
