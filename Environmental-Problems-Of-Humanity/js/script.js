@@ -48,10 +48,11 @@ const factorItem = document.querySelectorAll('.factors__item'),
       factorsItemText = document.querySelectorAll('.factors__item-text'),
       menuBtn = document.querySelector('.menu'),
       closeBtn = document.querySelector('.closeBtn'),
-      nav = document.querySelector('.nav');
+      nav = document.querySelector('.nav'),
+      navBlock = document.querySelectorAll('.nav_block');
 
 
-const toggleClass = (i) => {
+const toggleCard = (i) => {
     const thisMask = mask[i];
     const  thisTitle = factorsItemTitle[i];
     const thisText = factorsItemText[i];
@@ -63,15 +64,41 @@ const toggleClass = (i) => {
 
 
 const toggleMenu = () => {
-  nav.classList.toggle('nav-active')
+  nav.classList.toggle('nav-active');
+  navBlock.forEach((item) => {
+    item.classList.toggle('fadeIn')
+  });
+
 }
+
+const scrollTo = (from,to) => {
+  $(`.${from}`).on('click',(e) => {
+    e.preventDefault();
+    let top = $(`.${to}`).offset().top;
+    $('html,body').animate({
+      scrollTop:top
+    },700)
+  })
+}
+scrollTo('block-1','ecology')
+scrollTo('block-2','redBook')
+scrollTo('block-3','goal')
+scrollTo('block-4','statistic')
+scrollTo('block-5','soil')
+scrollTo('block-6','pollution-w')
+scrollTo('block-7','greenhouseEf')
+scrollTo('block-8','pollution-a')
+scrollTo('block-9','desision')
 
 // ----events--------------------------------------
 factorItem.forEach((item,i) => {
   item.addEventListener('click', () => {
-     toggleClass(i);
+     toggleCard(i);
   });
 });
 
 menuBtn.addEventListener('click',toggleMenu);
 closeBtn.addEventListener('click',toggleMenu);
+// nav.addEventListener('click',(e) => {
+//   openMenu(e);
+// })
