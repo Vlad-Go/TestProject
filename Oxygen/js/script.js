@@ -15,7 +15,23 @@ $('.achivement__slider-container').slick({
  new WOW().init();
 
 const menuBtn = document.querySelector('.header__menu-btn-wrapp'),
-       headerMenu = document.querySelector('.header__menu');
+      headerMenu = document.querySelector('.header__menu'),
+      expertiseSkilsItemValue = document.querySelectorAll('.expertise__skils-item-value');
+
+
+
+
+expertiseSkilsItemValue.forEach((item) => {
+  let precent = item.dataset.value;
+       item.innerHTML = `<span>${precent + '%'}</span>`;
+       // item.style.width = precent + '%' ;
+
+});
+
+
+
+
+
 
 menuBtn.addEventListener('click',()=>{
   headerMenu.classList.toggle('mobile-menu')
