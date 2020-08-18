@@ -10,48 +10,66 @@
 </head>
 <body>
 
-  <section class="page-section main-section">
-
+  <section class="main-section">
      <div class="main-section__content">
         <div class="main-section__content-left">
             <a href="#">
-              <picture>
-                  <img src="images/main/logo.svg" alt="" class="main-section__content-left-logo logo">
-              </picture>
+                <img src="images/main/logo.svg" alt="logo" class="main-section__logo logo">
             </a>
-            <div class="main-section__content-left-slider-labels">
-               <div class="main-section__content-left-slider-label"> New St.house</div>
-               <div class="main-section__content-left-slider-label">Unnamed Bar</div>
-               <div class="main-section__content-left-slider-label">Ofice Building</div>
-               <div class="main-section__content-left-slider-label"> Another St.house</div>
+            <div class="main-section__slider-labels">
+               <div class="main-section__slider-label">Bar interior</div>
+               <div class="main-section__slider-label">House interior</div>
+               <div class="main-section__slider-label">Caffe</div>
+               <div class="main-section__slider-label">House interior</div>
+               <div class="main-section__slider-label">Office interior</div>
+               <div class="main-section__slider-label">House interior</div>
+               <div class="main-section__slider-label">Flat interior</div>
+               <div class="main-section__slider-label">House interior</div>
             </div>
-            <div class="main-section__content-left-socials-links">
-                  <a class="main-section__content-left-socials-link" href="#">
-                    <img src="images/socials/facebook.svg" alt="" >
+            <div class="main-section__socials-links-wrapper">
+               <ul class="main-section__socials-links">
+                 <li class="main-section__socials-link" >
+                  <a href="#">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M40 20C40 8.95312 31.0469 0 20 0C8.95312 0 0 8.95312 0 20C0 31.0469 8.95312 40 20 40C20.1172 40 20.2344 40 20.3516 39.9922V24.4297H16.0547V19.4219H20.3516V15.7344C20.3516 11.4609 22.9609 9.13281 26.7734 9.13281C28.6016 9.13281 30.1719 9.26562 30.625 9.32812V13.7969H28C25.9297 13.7969 25.5234 14.7812 25.5234 16.2266V19.4141H30.4844L29.8359 24.4219H25.5234V39.2266C33.8828 36.8281 40 29.1328 40 20Z" />
+                    </svg>                      
                   </a>
-                  <a class="main-section__content-left-socials-link" href="#">
-                    <img src="images/socials/instagram.svg" alt="" >
+                 </li>
+                 <li class="main-section__socials-link" >
+                  <a href="#">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M23.8281 20C23.8281 22.1143 22.1143 23.8281 20 23.8281C17.8857 23.8281 16.1719 22.1143 16.1719 20C16.1719 17.8857 17.8857 16.1719 20 16.1719C22.1143 16.1719 23.8281 17.8857 23.8281 20Z"/>
+                      <path d="M28.9526 13.2269C28.7686 12.7283 28.475 12.2769 28.0936 11.9064C27.7231 11.525 27.272 11.2314 26.7731 11.0474C26.3684 10.8902 25.7605 10.7031 24.6408 10.6522C23.4296 10.5969 23.0664 10.585 20 10.585C16.9333 10.585 16.5701 10.5966 15.3592 10.6519C14.2395 10.7031 13.6313 10.8902 13.2269 11.0474C12.728 11.2314 12.2766 11.525 11.9064 11.9064C11.525 12.2769 11.2314 12.728 11.0471 13.2269C10.8899 13.6316 10.7028 14.2398 10.6519 15.3595C10.5966 16.5704 10.5847 16.9336 10.5847 20.0003C10.5847 23.0667 10.5966 23.4299 10.6519 24.6411C10.7028 25.7608 10.8899 26.3687 11.0471 26.7734C11.2314 27.2723 11.5247 27.7234 11.9061 28.0939C12.2766 28.4753 12.7277 28.7689 13.2266 28.9529C13.6313 29.1104 14.2395 29.2975 15.3592 29.3484C16.5701 29.4037 16.933 29.4153 19.9997 29.4153C23.0667 29.4153 23.4299 29.4037 24.6405 29.3484C25.7602 29.2975 26.3684 29.1104 26.7731 28.9529C27.7747 28.5666 28.5663 27.775 28.9526 26.7734C29.1098 26.3687 29.2969 25.7608 29.3481 24.6411C29.4034 23.4299 29.415 23.0667 29.415 20.0003C29.415 16.9336 29.4034 16.5704 29.3481 15.3595C29.2972 14.2398 29.1101 13.6316 28.9526 13.2269ZM20 25.8972C16.7429 25.8972 14.1025 23.2571 14.1025 20C14.1025 16.7429 16.7429 14.1028 20 14.1028C23.2568 14.1028 25.8972 16.7429 25.8972 20C25.8972 23.2571 23.2568 25.8972 20 25.8972ZM26.1304 15.2478C25.3693 15.2478 24.7522 14.6307 24.7522 13.8696C24.7522 13.1085 25.3693 12.4915 26.1304 12.4915C26.8915 12.4915 27.5085 13.1085 27.5085 13.8696C27.5082 14.6307 26.8915 15.2478 26.1304 15.2478Z"/>
+                      <path d="M20 0C8.95599 0 0 8.95599 0 20C0 31.044 8.95599 40 20 40C31.044 40 40 31.044 40 20C40 8.95599 31.044 0 20 0ZM31.4151 24.7348C31.3596 25.9573 31.1652 26.792 30.8813 27.5226C30.2847 29.0652 29.0652 30.2847 27.5226 30.8813C26.7923 31.1652 25.9573 31.3593 24.7351 31.4151C23.5104 31.4709 23.1192 31.4844 20.0003 31.4844C16.8811 31.4844 16.4902 31.4709 15.2652 31.4151C14.043 31.3593 13.208 31.1652 12.4777 30.8813C11.7111 30.593 11.0172 30.141 10.4434 29.5566C9.85931 28.9832 9.40735 28.2889 9.11896 27.5226C8.83514 26.7923 8.64075 25.9573 8.58521 24.7351C8.52875 23.5101 8.51562 23.1189 8.51562 20C8.51562 16.8811 8.52875 16.4899 8.5849 15.2652C8.64044 14.0427 8.83453 13.208 9.11835 12.4774C9.40674 11.7111 9.85901 11.0168 10.4434 10.4434C11.0168 9.85901 11.7111 9.40704 12.4774 9.11865C13.208 8.83484 14.0427 8.64075 15.2652 8.5849C16.4899 8.52905 16.8811 8.51562 20 8.51562C23.1189 8.51562 23.5101 8.52905 24.7348 8.58521C25.9573 8.64075 26.792 8.83484 27.5226 9.11835C28.2889 9.40674 28.9832 9.85901 29.5569 10.4434C30.141 11.0172 30.5933 11.7111 30.8813 12.4774C31.1655 13.208 31.3596 14.0427 31.4154 15.2652C31.4713 16.4899 31.4844 16.8811 31.4844 20C31.4844 23.1189 31.4713 23.5101 31.4151 24.7348Z"/>
+                    </svg>
                   </a>
-                  <a class="main-section__content-left-socials-link" href="#">
-                    <img src="images/socials/linkedin.svg" alt="" >
+                 </li>
+                 <li class="main-section__socials-link" >
+                  <a href="#">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20 0C8.95599 0 0 8.95599 0 20C0 31.044 8.95599 40 20 40C31.044 40 40 31.044 40 20C40 8.95599 31.044 0 20 0ZM14.1882 30.2344H9.31732V15.5801H14.1882V30.2344ZM11.7529 13.5791H11.7212C10.0867 13.5791 9.02954 12.4539 9.02954 11.0477C9.02954 9.60968 10.119 8.51562 11.7853 8.51562C13.4515 8.51562 14.4769 9.60968 14.5087 11.0477C14.5087 12.4539 13.4515 13.5791 11.7529 13.5791ZM31.7517 30.2344H26.8814V22.3947C26.8814 20.4245 26.1761 19.0808 24.4138 19.0808C23.0682 19.0808 22.2668 19.9872 21.9147 20.8621C21.7859 21.1752 21.7545 21.6129 21.7545 22.0508V30.2344H16.8839C16.8839 30.2344 16.9476 16.955 16.8839 15.5801H21.7545V17.655C22.4017 16.6565 23.5599 15.2362 26.1441 15.2362C29.3488 15.2362 31.7517 17.3306 31.7517 21.8317V30.2344Z" />
+                    </svg>  
                   </a>
+                 </li>
+               </ul>
             </div>
         </div>
-
         <div class="main-section__content-right">
-            <nav class="main-section__content-right-nav">
-              <a href="#" class="main-section__content-right-nav-item">About</a>
-              <a href="#" class="main-section__content-right-nav-item">Projects</a>
-              <a href="#" class="main-section__content-right-nav-item">Trends</a>
+            <nav class="main-section__nav">
+              <ul class="main-section__nav-inner">
+                <li><a href="#" class="main-section__nav-item"><span>About</span></a></li>
+                <li><a href="#" class="main-section__nav-item"><span>Projects</span></a></li>
+                <li><a href="#" class="main-section__nav-item"><span>Trends</span></a></li>
+              </ul>
             </nav>
-            <h1 class="main-section__content-right-title">
+            <h1 class="main-section__title">
                  Interior <span>Design</span>
             </h1>
         </div>
      </div>
      <div class="main-section__slider">
 
-           <div class="main-section__slider-item" style="background-image: url(images/main/slider-1.jpg)">
+           <div class="main-section__slider-item" style="background-image: url(images/works/slider-1.jpg)">
                 <div class="main-section__slider-item-inner">
                   <p class="main-section__slider-item-text">The architectural reimagining of the space began with the idea of paring away everything to a state of emptiness and using three axes from the underlying structure to shape the new geometry.</p>
                   <a href="#" class="main-section__slider-item-btn">
@@ -59,7 +77,15 @@
                   </a>
                 </div>
            </div>
-           <div class="main-section__slider-item" style="background-image: url(images/main/slider-1.jpg)">
+           <div class="main-section__slider-item" style="background-image: url(images/works/slider-2.jpg)">
+            <div class="main-section__slider-item-inner">
+              <p class="main-section__slider-item-text">The architectural reimagining of the space began with the idea of paring away everything to a state of emptiness and using three axes from the underlying structure to shape the new geometry.</p>
+              <a href="#" class="main-section__slider-item-btn">
+                <span>More</span>
+              </a>
+            </div>
+           </div>
+           <div class="main-section__slider-item" style="background-image: url(images/works/slider-3.jpg)">
                 <div class="main-section__slider-item-inner">
                   <p class="main-section__slider-item-text">The architectural reimagining of the space began with the idea of paring away everything to a state of emptiness and using three axes from the underlying structure to shape the new geometry.</p>
                   <a href="#" class="main-section__slider-item-btn">
@@ -67,7 +93,7 @@
                   </a>
                 </div>
            </div>
-           <div class="main-section__slider-item" style="background-image: url(images/main/slider-1.jpg)">
+           <div class="main-section__slider-item" style="background-image: url(images/works/slider-4.jpg)">
                 <div class="main-section__slider-item-inner">
                   <p class="main-section__slider-item-text">The architectural reimagining of the space began with the idea of paring away everything to a state of emptiness and using three axes from the underlying structure to shape the new geometry.</p>
                   <a href="#" class="main-section__slider-item-btn">
@@ -75,7 +101,7 @@
                   </a>
                 </div>
            </div>
-           <div class="main-section__slider-item" style="background-image: url(images/main/slider-1.jpg)">
+           <div class="main-section__slider-item" style="background-image: url(images/works/slider-5.jpg)">
                 <div class="main-section__slider-item-inner">
                   <p class="main-section__slider-item-text">The architectural reimagining of the space began with the idea of paring away everything to a state of emptiness and using three axes from the underlying structure to shape the new geometry.</p>
                   <a href="#" class="main-section__slider-item-btn">
@@ -83,14 +109,328 @@
                   </a>
                 </div>
            </div>
+           <div class="main-section__slider-item" style="background-image: url(images/works/slider-6.jpg)">
+              <div class="main-section__slider-item-inner">
+                <p class="main-section__slider-item-text">The architectural reimagining of the space began with the idea of paring away everything to a state of emptiness and using three axes from the underlying structure to shape the new geometry.</p>
+                <a href="#" class="main-section__slider-item-btn">
+                  <span>More</span>
+                </a>
+              </div>
+           </div>
+           <div class="main-section__slider-item" style="background-image: url(images/works/slider-7.jpg)">
+              <div class="main-section__slider-item-inner">
+                <p class="main-section__slider-item-text">The architectural reimagining of the space began with the idea of paring away everything to a state of emptiness and using three axes from the underlying structure to shape the new geometry.</p>
+                <a href="#" class="main-section__slider-item-btn">
+                  <span>More</span>
+                </a>
+              </div>
+           </div>
+            <div class="main-section__slider-item" style="background-image: url(images/works/slider-8.jpg)">
+              <div class="main-section__slider-item-inner">
+                <p class="main-section__slider-item-text">The architectural reimagining of the space began with the idea of paring away everything to a state of emptiness and using three axes from the underlying structure to shape the new geometry.</p>
+                <a href="#" class="main-section__slider-item-btn">
+                  <span>More</span>
+                </a>
+              </div>
+            </div>
 
      </div>
+   </section> 
+<!--    
+  <section class="benefits-section">
+    <div class="container">
+       <div class="section__inner">
+            <h2 class="section-title">
+              <span class="section-title__inner">
+                               MODERN
+                <span>INTERIOR STUDIO</span>
+              </span>
+            </h2>
+            <div class="benefits-section__content">
+                  <div class="benefits-section__content-column benefits-section__content-column_left">
+                      <div class="image-wrapp">
+                        <picture>
+                           <source class="image benefits-section__img"  type="image/webp" srcset="images/benefits/benefits-img.webp 1x">
+                           <img class="image benefits-section__img"  src="images/benefits/benefits-img.jpg" alt="benefits-img"/> 
+                        </picture>
+                      </div>
+                      <div class="section-info benefits-section__info">Features</div>
+                  </div>
+                  <div class="benefits-section__content-column benefits-section__content-column_right">
+                    <p class="benefits-section__text">Adding items that have that natural feel or
+                       are from organic roots would give our homes the warmth of nature.
+                    </p>
+                    <div class="benefits-section__box">
+                        <div class="benefits-section__box-column">
+                            <div class="benefits-section__box-item">
+                              <span class="benefits-section__box-item-text">Design</span>
+                              <img src="images/benefits/benefit-1.svg" alt="benefit icon" class="benefits-section__box-item-img">
+                            </div>
 
-   </section>
+                            <div class="benefits-section__box-item">
+                              <span class="benefits-section__box-item-text">Ideas</span>
+                              <img src="images/benefits/benefit-2.svg" alt="benefit icon" class="benefits-section__box-item-img">
+                            </div>
+
+                            <div class="benefits-section__box-item">
+                              <span class="benefits-section__box-item-text">Projects</span>
+                              <img src="images/benefits/benefit-3.svg" alt="benefit icon" class="benefits-section__box-item-img">
+                            </div>
+                        </div>
+                        
+                        <div class="benefits-section__box-column">
+                              <div class="benefits-section__box-item">
+                                <span class="benefits-section__box-item-text">Color</span>
+                                <img src="images/benefits/benefit-4.svg" alt="benefit icon" class="benefits-section__box-item-img">
+                              </div>
+
+                              <div class="benefits-section__box-item">
+                                <span class="benefits-section__box-item-text">Support</span>
+                                <img src="images/benefits/benefit-5.svg" alt="benefit icon" class="benefits-section__box-item-img">
+                              </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+      </div>
+    </div>
+  </section> 
+
+  <section class="works-section">
+    <div class="container">
+      <div class="section__inner">
+          <h2 class="section-title">
+            <span class="section-title__inner">
+               Our Works 
+             </span>
+          </h2>
+      </div>
+    </div>
+          <div class="works-section__slider">
+
+            <div class="works-section__slider-item" style="background-image: url(images/works/slider-1.jpg)">
+              <h3 class="works-section__slider-item-name">Bar interior</h3>
+              <p class="works-section__slider-item-location">UK, Bristol</p>
+              <a class="btn works-section__slider-item-btn" href="#"><span>More</span>  </a>
+              <div class="works-section__slider-item-count">01</div>
+            </div>
+            <div class="works-section__slider-item" style="background-image: url(images/works/slider-2.jpg)">
+              <h3 class="works-section__slider-item-name">House interior</h3>
+              <p class="works-section__slider-item-location">USA, New York</p>
+               <a class="btn works-section__slider-item-btn" href="#">spaan<span>More</span>  </a>
+              <div class="works-section__slider-item-count">02</div>
+            </div>
+            <div class="works-section__slider-item" style="background-image: url(images/works/slider-3.jpg)">
+              <h3 class="works-section__slider-item-name">Caffe</h3>
+              <p class="works-section__slider-item-location">USA, New York</p>
+              <a class="btn works-section__slider-item-btn" href="#"><span>More</span>  </a>
+              <div class="works-section__slider-item-count">03</div>
+            </div>
+            <div class="works-section__slider-item" style="background-image: url(images/works/slider-4.jpg)">
+              <h3 class="works-section__slider-item-name">House interior</h3>
+              <p class="works-section__slider-item-location">Italy, Napoli</p>
+              <a class="btn works-section__slider-item-btn" href="#"><span>More</span>  </a>
+              <div class="works-section__slider-item-count">04</div>
+            </div>
+            <div class="works-section__slider-item" style="background-image: url(images/works/slider-5.jpg)">
+              <h3 class="works-section__slider-item-name">Office interior</h3>
+              <p class="works-section__slider-item-location">UK, London</p>
+              <a class="btn works-section__slider-item-btn" href="#"><span>More</span>  </a>
+              <div class="works-section__slider-item-count">05</div>
+            </div>
+            <div class="works-section__slider-item" style="background-image: url(images/works/slider-6.jpg)">
+              <h3 class="works-section__slider-item-name">House interior</h3>
+              <p class="works-section__slider-item-location">USA, Los Angeles</p>
+              <a class="btn works-section__slider-item-btn" href="#"><span>More</span>  </a>
+              <div class="works-section__slider-item-count">06</div>
+            </div>
+            <div class="works-section__slider-item" style="background-image: url(images/works/slider-7.jpg)">
+              <h3 class="works-section__slider-item-name">Flat interior</h3>
+              <p class="works-section__slider-item-location">Australia, Sidney</p>
+              <a class="btn works-section__slider-item-btn" href="#"><span>More</span>  </a>
+              <div class="works-section__slider-item-count">07</div>
+            </div>
+            <div class="works-section__slider-item" style="background-image: url(images/works/slider-8.jpg)">
+              <h3 class="works-section__slider-item-name">House interior</h3>
+              <p class="works-section__slider-item-location">USA, ...</p>
+              <a class="btn works-section__slider-item-btn" href="#"><span>More</span>  </a>
+              <div class="works-section__slider-item-count">08</div>
+            </div>
+          </div>
+  </section>
+
+  <section class="trends-section">
+    <div class="container">
+        <div class="section__inner">
+          <h2 class="section-title">
+            <span class="section-title__inner">
+              Trends
+            </span>
+          </h2>
+          <h3 class="section-suptitle trends-section__suptitle">
+            FROM MILAN DESIGN WEEK
+          </h3>
+          <div class="trends-section__content-wrapper color-trends__wrapper">
+              <div class="color-trends__colunm color-trends__column-left">
+                    <h2 class="color-trends__title trends-title">
+                          INTERIOR COLOR
+                     <span>TRENDS 2020</span> 
+                    </h2>
+                    <p class="color-trends__text">
+                      I love to observe how the colour trends that we see are always the
+                      consequence of bigger trends, which are generated by macro changes in
+                      our society, interest, behaviours. As a consequence, they are reflected
+                      into new shapes, new colours...
+                    </p>
+                    <div class="color-trends__colorsBox">
+                      <div class="color-trends__colorsBox-year">2020</div>
+                      <div class="color-trends__colorsBox-color"></div>
+                      <div class="color-trends__colorsBox-color"></div>
+                      <div class="color-trends__colorsBox-color"></div>
+                    </div>
+                    <div class="section-info trends-section__info">Colors</div>
+              </div>
+              <div class="color-trends__colunm color-trends__column-right">
+                  <div class="image-wrapp">
+                    <picture>
+                      <source class="image color-trends__img" type="image/webp" srcset="images/trends/trends-img.webp">
+                      <img class="image color-trends__img" src="images/trends/trends-img.jpg" alt="colors"/> 
+                   </picture>
+                  </div>
+               </div>
+          </div>
+          <div class="trends-section__content-wrapper home-style__wrapper">
+              <div class="home-style__row">
+                  <div class="home-style__column">
+                      <picture>
+                          <source class="home-style__img home-style__img_first" type="image/webp" srcset="images/trends/home-style-1.webp">
+                          <img src="images/trends/home-style-1.jpg" alt="" class="home-style__img home-style__img_first">
+                       </picture>
+                  </div>
+                  <div class="home-style__column">
+                      <picture>
+                          <source class="home-style__img home-style__img_second" type="image/webp" srcset="images/trends/home-style-2.webp">
+                          <img src="images/trends/home-style-2.jpg" alt="" class="home-style__img home-style__img_second">
+                      </picture>
+                  </div>
+                  <div class="home-style__column">
+                    <h2 class="home-style__title trends-title">
+                      THAI STYLE HOME
+                      <span>WABI SABI</span>  
+                    </h2>
+                    <picture>
+                      <source class="home-style__img home-style__img_third" type="image/webp" srcset="images/trends/home-style-3.webp">
+                      <img src="images/trends/home-style-3.jpg" alt="" class="home-style__img home-style__img_third">
+                    </picture>
+                  </div>
+              </div>
+              <div class="home-style__row">
+                <picture>
+                  <source class="home-style__img  home-style__img_fourth" type="image/webp" srcset="images/trends/home-style-4.webp">
+                  <img src="images/trends/home-style-4.jpg" alt="" class="home-style__img  home-style__img_fourth">
+                </picture>
+                <p class="home-style__text">
+                  The home is surrounded by a landscaped garden and there are lots of different
+                  neighbours in the area.  The average home is created for a single family.
+                </p>
+              <div class="section-info  trends-section__info_bottom">Home style</div>
+             </div>
+        </div>
+        </div>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="container">
+      <div class="section__inner">
+          <h2 class="section-title_white section-title">
+            <span class="section-title__inner">
+              Contact Us
+            </span>
+          </h2>
+         <p class="contact-section__text">We are always ready to help you</p>
+           <div class="contact-section__box">
+             <form action="#" class="contact-section__form form">
+                   <div class="form__row">
+                     <div class="form__column_first">
+                       <label class="form__label"  for="userName">Name:
+                        <input class="form__input" id="userName" type="text" name="userName">
+                        <span class="error-message">Field must contain only lettters</span>
+                       </label>
+                       <label class="form__label" for="userEmail">Email:
+                         <input class="form__input" type="email" id="userEmail" name="userEmail">
+                         <span class="error-message">Enter correct email</span>
+                        </label>
+                     </div>
+                     <div class="form__column">
+                       <label class="form__label" for="userPhone">Phone:
+                           <input class="form__input" type="tel" id="userPhone" name="userPhone">
+                           <span class="error-message">Enter correct phone number</span>
+                        </label>
+
+                     </div>
+                   </div>
+                   <div class="form__row">
+                     <div class="form__column_first">
+                       <label class="form__label" for="message">Message:
+                            <textarea  class="form__textarea" name="message" id="message"></textarea>
+                       </label>
+                     </div>
+                     <div class="form__column">
+                       <button disabled class="form__btn btn" type="submit" name="submitButton"><span>Send</span></button>
+                     </div>
+                   </div>
+             </form>
+             <div class="contact-section__contacts contacts">
+
+                <div class="contacts__item">
+                  <div class="contacts__header">
+                    <img src="images/contacts/contacts-icon-1.svg" alt="Address" class="contacts__header-img">Address:
+                  </div>
+                  <p class="contacts__body">
+                    121 Rock Sreet, 21 Avenue,
+                    New York, NY 92103-9000
+                  </p>
+                </div>
+                <div class="contacts__item">
+                  <div class="contacts__header">
+                    <img src="images/contacts/contacts-icon-2.svg" alt="Email" class="contacts__header-img">Email
+                  </div>
+                  <p class="contacts__body">
+                    <span><a href="mailto:support@company.com" >support@company.com</a></span>
+                    <span><a href="mailto:hello@company.com" >hello@company.com</a></span>
+                  </p>
+                </div>
+                <div class="contacts__item">
+                  <div class="contacts__header">
+                    <img src="images/contacts/contacts-icon-3.svg" alt="Phone" class="contacts__header-img">Call us:
+                  </div>
+                  <p class="contacts__body">
+                    <span><a href="tel:1234567891">1 (234) 567-891</a></span>
+                    <span><a href="tel:1234987654">1 (234) 987-654</a></span>
+                  </p>
+                </div>
+                <div class="contacts__item">
+                  <div class="contacts__header">
+                    <img src="images/contacts/contacts-icon-4.svg" alt="Work time" class="contacts__header-img">Work time
+                  </div>
+                  <p class="contacts__body">24 hours every day
+                  </p>
+                </div>
+
+             </div>
+           </div>
+           <div class="section-info section-info_white contact-section__info">Contact</div>
+      </div>
+    </div>
+  </section> 
+ -->
+
+
+
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="js/libs.min.js" charset="utf-8"></script>
 <script src="js/script.js" charset="utf-8"></script>
 </body>
 </html>
