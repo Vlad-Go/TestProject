@@ -3054,7 +3054,7 @@ $('.main-section__slider-labels').slick({
   {
     breakpoint: 400,
     settings: {
-     centerPadding: '30px',
+     centerPadding: '28px',
     }
   },
 
