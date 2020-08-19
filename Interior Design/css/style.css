@@ -1552,7 +1552,7 @@ body {
   }
 
   .benefits-section__text {
-    margin-left: 10px;
+    margin-left: 0px;
   }
 
   .section-info {
@@ -1561,7 +1561,37 @@ body {
   }
 
   .benefits-section__info {
-    bottom: -70px;
+    bottom: -170px;
+  }
+
+  .section-title {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .benefits-section__box-column:first-child::after,
+  .benefits-section__box-column:first-child::before,
+  .benefits-section__box-column:last-child::after,
+  .benefits-section__box-column:last-child::before {
+    display: none;
+  }
+
+  .benefits-section__box-column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  .benefits-section__box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-top: 15px;
   }
 }
 
@@ -1596,6 +1626,46 @@ body {
   }
 }
 
+@media (max-width: 580px) {
+  .benefits-section__box-column {
+    padding-left: 0;
+  }
+
+  .benefits-section__box {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  .benefits-section__content-column_right {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .benefits-section__content-column_left {
+    padding-left: 40px;
+  }
+
+  .benefits-section__box-item {
+    height: 100px;
+    width: 100px;
+    min-height: auto;
+    min-width: auto;
+  }
+
+  .benefits-section__box-item-img {
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .benefits-section__box-item {
+    background-color: #444;
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
 @media (max-width: 400px) {
   .main-section__content-left {
     max-width: 160px;
@@ -1620,6 +1690,15 @@ body {
     width: 20px;
     height: 20px;
   }
+
+  .section-title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .section-title::before {
+    height: 12px;
+  }
 }
 
 @media (max-width: 350px) {
@@ -1632,6 +1711,11 @@ body {
   .main-section__title span {
     font-size: 43px !important;
     line-height: 50px !important;
+  }
+
+  .benefits-section__text {
+    font-size: 18px;
+    line-height: 19px;
   }
 }
 
