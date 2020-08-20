@@ -3010,6 +3010,65 @@
 
 }));
 
+  const $nameInput = document.getElementById('userName'),
+      $emailInput = document.getElementById('userEmail'),
+      $phoneInput = document.getElementById('userPhone'),
+      $message = document.getElementById('message'),
+      $formBtn =  document.querySelector('.form__btn');
+// --------------------^^--------------^^----------------------
+const expressionForName = /^[a-zA-Z ]+$/,
+      expressionForEmail = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i,
+      expressionForPhone = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+
+let result
+
+
+
+const toggleButton = () =>{
+   if(isValid($nameInput.value,$nameInput.id ) && isValid($emailInput.value,$emailInput.id ) && isValid($phoneInput.value,$phoneInput.id ) && $message.value ){
+      $formBtn.disabled = false;
+     
+   }else{
+      $formBtn.disabled = true;
+   }
+}
+
+const validate = e => {
+
+      const target = e.target;
+      const value = target.value;
+          
+         if(!isValid(value , target.id)){
+            target.classList.toggle('error');
+            target.nextSibling.nextSibling.style.opacity = '1'; 
+            toggleButton()
+         }else{
+            target.nextSibling.nextSibling.style.opacity = '0'; 
+            target.classList.remove('error');
+            toggleButton()
+         }
+}
+
+const isValid =(value , type)=>{
+   switch  (type) {
+      case "userName":
+        result = expressionForName.test(value);
+       return result
+      case "userEmail":
+        result = expressionForEmail.test(value);
+        return result
+      case "userPhone":
+        result = expressionForPhone.test(value);
+        return result
+      default:
+         break;
+   }
+
+}
+$nameInput.addEventListener('change' , validate);
+$emailInput.addEventListener('change', validate);
+$phoneInput.addEventListener('change', validate);
+$message.addEventListener('change', toggleButton);
 
 // --------Main
 $('.main-section__slider').slick({
@@ -3073,63 +3132,3 @@ $('.works-section__slider').slick({
   dots: true,
   dotsClass: 'works-section__slider-dots'
 });
-//   const $nameInput = document.getElementById('userName'),
-      $emailInput = document.getElementById('userEmail'),
-      $phoneInput = document.getElementById('userPhone'),
-      $message = document.getElementById('message'),
-      $formBtn =  document.querySelector('.form__btn');
-// --------------------^^--------------^^----------------------
-const expressionForName = /^[a-zA-Z ]+$/,
-      expressionForEmail = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i,
-      expressionForPhone = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
-
-let result
-
-
-
-const toggleButton = () =>{
-   debugger
-   if(isValid($nameInput.value,$nameInput.id ) && isValid($emailInput.value,$emailInput.id ) && isValid($phoneInput.value,$phoneInput.id ) && $message.value ){
-      $formBtn.disabled = false;
-     
-   }else{
-      $formBtn.disabled = true;
-   }
-}
-
-const validate = e => {
-
-      const target = e.target;
-      const value = target.value;
-          
-         if(!isValid(value , target.id)){
-            target.classList.toggle('error');
-            target.nextSibling.nextSibling.style.opacity = '1'; 
-            toggleButton()
-         }else{
-            target.nextSibling.nextSibling.style.opacity = '0'; 
-            target.classList.remove('error');
-            toggleButton()
-         }
-}
-
-const isValid =(value , type)=>{
-   switch  (type) {
-      case "userName":
-        result = expressionForName.test(value);
-       return result
-      case "userEmail":
-        result = expressionForEmail.test(value);
-        return result
-      case "userPhone":
-        result = expressionForPhone.test(value);
-        return result
-      default:
-         break;
-   }
-
-}
-$nameInput.addEventListener('change' , validate);
-$emailInput.addEventListener('change', validate);
-$phoneInput.addEventListener('change', validate);
-$message.addEventListener('change', toggleButton);
