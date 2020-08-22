@@ -307,6 +307,21 @@ body {
   display: none;
 }
 
+.slider-img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+
 .main-section {
   position: relative;
 }
@@ -532,7 +547,7 @@ body {
   height: 100% !important;
   position: relative;
   z-index: 5;
-  background-color: #acacac;
+  background-color: #956f5b;
 }
 
 .main-section__slider-item::before {

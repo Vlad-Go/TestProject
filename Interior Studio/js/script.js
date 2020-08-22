@@ -3100,8 +3100,9 @@ class Modal{
        const modalControler = this._createControler();
 
        // ==== Styling ===//
+       modal.classList.add('modal');
        modalOverlay.classList.add('modal-overlay');
-       document.body.style.overflow = "hidden";
+       document.querySelector('html').style.overflow = "hidden";
        
        // ==== Assembly ===//
         modal.append(modalControler)
@@ -3114,6 +3115,7 @@ class Modal{
    return this
    }
    destroy(){
+      document.querySelector('html').style.overflow = "scroll";
       document.querySelector('.modal-overlay').remove();
       //controlerCloseBtn.removeEventListener('click',this.destroy)
 
@@ -3131,7 +3133,6 @@ class ImageModal extends Modal{
       const img = document.createElement('img');  
       img.src = this.url;
       this.modal.append(img);
-      this.modal.classList.add('modal');
       img.classList.add('modal-img');
      ;   
    }
@@ -3155,6 +3156,9 @@ $imageModalElems.forEach(item =>
 // --------Main
 $('.main-section__slider').slick({
   infinite: true,
+  lazyLoad: 'ondemand',
+  fade: true,
+  cssEase: 'linear',
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows:false,
